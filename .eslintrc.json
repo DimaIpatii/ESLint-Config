@@ -1,0 +1,41 @@
+{
+    "root": true,
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true,
+        "commonjs": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parser": "@babel/eslint-parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "globalReturn": false,
+            "jsx": true
+        },
+        "babelOptions": {
+            "configFile": "./babel.config.json"
+          },
+        "ecmaVersion": 12,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "@babel",
+        "react"
+    ],
+    "rules": {
+        "@babel/new-cap": "error",
+        "@babel/no-invalid-this": "error",
+        "@babel/no-unused-expressions": "error",
+        "@babel/object-curly-spacing": "error",
+        "@babel/semi": "error"
+    },
+    "settings": {
+        "react" : {
+            "version" : "detect"
+        }
+    }
+}

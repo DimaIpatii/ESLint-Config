@@ -1,0 +1,53 @@
+{
+  "name": "eslint-config",
+  "version": "1.0.0",
+  "description": "Configure ESLint with Webpack & Babel",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --config webpack.dev.js",
+    "live": "webpack serve --config webpack.dev.js --open",
+    "lint": "eslint --fix .",
+    "lint-check": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DimaIpatii/ESLint-Config.git"
+  },
+  "author": "Dmytro Ipatii",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DimaIpatii/ESLint-Config/issues"
+  },
+  "homepage": "https://github.com/DimaIpatii/ESLint-Config#readme",
+  "browserslist": [
+    ">0.1%",
+    "not dead",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/eslint-parser": "^7.12.1",
+    "@babel/eslint-plugin": "^7.12.1",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-syntax-jsx": "^7.12.1",
+    "@babel/plugin-transform-react-display-name": "^7.12.1",
+    "@babel/plugin-transform-react-jsx": "^7.12.12",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "eslint": "^7.18.0",
+    "eslint-plugin-react": "^7.22.0",
+    "html-webpack-plugin": "^4.5.1",
+    "webpack": "^5.16.0",
+    "webpack-cli": "^4.4.0",
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
